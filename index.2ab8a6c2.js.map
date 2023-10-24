@@ -1,1 +1,0 @@
-{"mappings":"YAAaA,SAASC,cAAc,QACpCC,QAAQC,IAAIC,O","sources":["src/index.js"],"sourcesContent":["const body = document.querySelector('body');\nconsole.log(bodygi);\n"],"names":["document","querySelector","console","log","bodygi"],"version":3,"file":"index.2ab8a6c2.js.map"}
