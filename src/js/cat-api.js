@@ -7,6 +7,7 @@ axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
 function fetchBreeds() {
   return axios.get('/breeds').then(response => {
     return response.data;
+    console.log(response);
   });
 }
 

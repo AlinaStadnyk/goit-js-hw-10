@@ -9,6 +9,7 @@ const elems = {
   error: document.querySelector('.error'),
   cat: document.querySelector('.cat-info'),
 };
+console.log(elems.cat);
 elems.loader.classList.remove('is-hidden');
 elems.select.classList.add('is-hidden');
 elems.error.classList.add('is-hidden');
