@@ -9,7 +9,7 @@ const elems = {
   error: document.querySelector('.error'),
   cat: document.querySelector('.cat-info'),
 };
-console.log(elems.cat);
+
 elems.loader.classList.remove('is-hidden');
 elems.select.classList.add('is-hidden');
 elems.error.classList.add('is-hidden');
@@ -47,14 +47,15 @@ function handlerSelect(event) {
       elems.loader.classList.add('is-hidden');
       const { breeds, url } = response[0];
       const { name, temperament, description } = breeds[0];
-      console.log(temperament);
-      const markup = `
+
+      elems.cat.innerHTML = `
       <img src = ${url} class="cat-photos" width = 600/>
+      <div class="cat-text">
       <h1 class="cat-heading">${name}</h1>
       <p class="cat-description">${description}</p>
       <h2 clss="cat-temp">${temperament}</h2>
+      <div class="cat-text"></div>
       `;
-      elems.cat.innerHTML = markup;
     })
     .catch(() => {
       Notiflix.Notify.failure(
